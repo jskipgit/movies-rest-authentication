@@ -1,0 +1,11 @@
+INSERT INTO public.movie_user (id, display_name, password, username) VALUES (-1, 'Jason Skipper', 'one', 'one');
+INSERT INTO public.movie_user (id, display_name, password, username) VALUES (-2, 'Jason Skipper', 'two', 'two');
+INSERT INTO public.movie_user (id, display_name, password, username) VALUES (-3, 'Jason Skipper', 'three', 'three');
+INSERT INTO public.movie (id, category, description, mpaa_rating, name, poster_url, rating) VALUES (-1, 'Sci-Fi', 'A cool sci fi film', 'R', 'Matrix', 'https://www.movieposter.com/posters/archive/main/9/A70-4902', 10);
+INSERT INTO public.movie (id, category, description, mpaa_rating, name, poster_url, rating) VALUES (-2, 'Sci-Fi', 'A coolish sci fi film', 'R', 'Matrix Reloaded', 'http://vignette4.wikia.nocookie.net/thegamingfamily/images/0/07/The-Matrix-Reloaded-movie-poster.jpg/revision/latest?cb=20140922193256', 9.5);
+INSERT INTO public.movie (id, category, description, mpaa_rating, name, poster_url, rating) VALUES (-3, 'Comedy', 'Halarious', 'PG-13', 'Groundhog Day', 'https://upload.wikimedia.org/wikipedia/en/b/b1/Groundhog_Day_(movie_poster).jpg', 10);
+INSERT INTO public.permission (id, key, name) VALUES (-1, 'PERM_CREATE_USR', 'New User');
+INSERT INTO public.permission (id, key, name) VALUES (-2, 'PERM_CREATE_MOVIE', 'Create Movies');
+INSERT INTO public.permission (id, key, name) VALUES (-3, 'PERM_EDIT_USR', 'Edit User');
+INSERT INTO public.permission (id, key, name) VALUES (-4, 'PERM_EDIT_MOVIE', 'Edit Movie');
+INSERT INTO public.movie_user_permissions (movie_user_id, permissions_id) VALUES (-1, -2);
